@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 
 #nav {
     position: fixed;
-    z-index: 10;
+    z-index: 2;
     width: 100vw;
     height: 11vh;
     border: 1px solid rgb(255, 255, 255);
@@ -159,7 +159,7 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
-#login>img {
+#logo {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -183,7 +183,7 @@ body::-webkit-scrollbar {
     width: 30px;
     padding: 5px;
 }
-#login>h2 {
+#wlc {
     width: 250px;
     top: 10%;
     position: absolute;
@@ -372,6 +372,7 @@ input[type="password"]:focus {
 }
 
 #signup {
+    visibility: hidden;
     position: absolute;
     top: 87%;
     font-size: 13px;
@@ -389,6 +390,43 @@ input[type="password"]:focus {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#signin{
+    background-color: white;
+    right: 11.3%;
+    top: 2%;
+    width: 463px;
+    height: 97vh;
+    border-radius: 20px;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+#signin img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 3%;
+}
+#signin h2{
+    width: 310px;
+    top: 10%;
+    position: absolute;
+    font-size: 30px;
+    /* border: 2px solid black; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 25px;
+}
+
+#signin p{
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    top: 15%;
+}
 #down-arrow {
     position: absolute;
     top: 91%;
