@@ -1,3 +1,24 @@
+//page-01
+//logIn button
+document.getElementById("log-in").onclick = function(){
+    document.getElementById("login").style.position = "absolute";
+    document.getElementById("login").style.left = "37%"
+    document.getElementById("login").style.zIndex = "2";
+    document.getElementById("nav").style.zIndex = "0";
+    document.getElementById("box").style.zIndex = "1"
+    document.getElementById("box").style.backgroundColor = "#0000008b"
+    document.getElementById("forget").style.left = "23%"
+    document.body.style.overflowY = "hidden"
+}
+document.getElementById("close").onclick = function(){
+    document.getElementById("login").style.position = "static";
+    document.getElementById("login").style.zIndex = "0";
+    document.getElementById("nav").style.zIndex = "1";
+    document.getElementById("box").style.zIndex = "-1";
+    document.getElementById("box").style.backgroundColor = "#eeeeee";
+    document.getElementById("forget").style.left = "64.5%";
+    document.body.style.overflowY = "scroll";
+}
 //page-02
 //Button-1
 document.getElementById("circle1").onclick = function button1(){
