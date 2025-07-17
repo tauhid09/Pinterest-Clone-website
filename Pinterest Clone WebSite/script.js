@@ -10,14 +10,33 @@ document.getElementById("log-in").onclick = function(){
     document.getElementById("forget").style.left = "23%"
     document.body.style.overflowY = "hidden"
 }
-document.getElementById("close").onclick = function(){
+document.getElementById("close-1").onclick = function(){
     document.getElementById("login").style.position = "static";
     document.getElementById("login").style.zIndex = "0";
-    document.getElementById("nav").style.zIndex = "1";
+    document.getElementById("nav").style.zIndex = "10";
     document.getElementById("box").style.zIndex = "-1";
     document.getElementById("box").style.backgroundColor = "#eeeeee";
     document.getElementById("forget").style.left = "64.5%";
     document.body.style.overflowY = "scroll";
+}
+//singin button
+document.getElementById("sign-in").onclick = function(){
+    document.getElementById("login").style.position = "absolute";
+    document.getElementById("signin").style.visibility = "visible"
+    document.getElementById("login").style.visibility = "hidden"
+    document.body.style.overflowY = "hidden"
+    document.getElementById("nav").style.zIndex = "0";
+    document.getElementById("box").style.zIndex = "1"
+    document.getElementById("box").style.backgroundColor = "#0000008b"
+}
+document.getElementById("close-2").onclick = function(){
+    document.getElementById("login").style.position = "static";
+    document.getElementById("signin").style.visibility = "hidden"
+    document.getElementById("login").style.visibility = "visible"
+    document.body.style.overflowY = "scroll"
+    document.getElementById("nav").style.zIndex = "10";
+    document.getElementById("box").style.zIndex = "-1"
+    document.getElementById("box").style.backgroundColor = "#ffffffff"
 }
 //page-02
 //Button-1
