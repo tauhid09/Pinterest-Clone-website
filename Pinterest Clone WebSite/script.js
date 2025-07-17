@@ -40,6 +40,7 @@ document.getElementById("close-2").onclick = function(){
 }
 //page-02
 //Button-1
+
 document.getElementById("circle1").onclick = function button1(){
     document.getElementById("circle1").style.backgroundColor = "#C28B00"
     document.getElementById("circle1").style.borderColor = "#C28B00"
@@ -58,9 +59,8 @@ document.getElementById("circle1").onclick = function button1(){
     document.getElementById("img5").src = "https://i.pinimg.com/736x/dc/e8/d6/dce8d6eae759e047919a1d77552c6f27.jpg"
     document.getElementById("img6").src = "https://i.pinimg.com/736x/ad/a4/18/ada418d77a8bffdb9b6fae98253b4974.jpg"
     document.getElementById("img7").src = "https://i.pinimg.com/736x/34/2a/c3/342ac3bd1da9762f33e3a938559072ff.jpg"
-    
+};
 
-}
 //Button-2
 document.getElementById("circle2").onclick = function button2(){
     document.getElementById("circle1").style.backgroundColor = "#d5d5d5"
