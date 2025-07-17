@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
 }
 
 #nav-link>a {
-    color: rgb(63, 107, 108);
+    color: #2F5D82;
     display: flex;
     font-weight: 600;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -96,26 +96,26 @@ body::-webkit-scrollbar {
 #login-regis>button {
     font-size: 15px;
     font-weight: bold;
-    width: 80px;
+    width: 90px;
     height: 50px;
     border-radius: 20px;
     border: none;
-    background-color: red;
-    color: white;
+    background-color: #ff0000;
+    color: #ffffff;
     cursor: pointer;
 }
 
 #login-regis>button:hover {
-    background-color: rgb(185, 1, 1);
+    background-color: #b90101;
 }
 
 #login-regis>button:nth-child(even) {
-    background-color: rgb(227, 223, 199);
-    color: rgb(48, 48, 48);
+    background-color: #E0E0D9;
+    color: #303030;
 }
 
 #login-regis>button:nth-child(even):hover {
-    background-color: rgb(181, 179, 163);
+    background-color: #c6c6be;
 }
 
 .page {
@@ -896,12 +896,13 @@ table tr td input[type="date"]:focus{
 }
 
 .image {
+    filter: brightness(0.9);
     background-size: cover;
     background-position: center;
-    filter: brightness(0.6);
 }
 
 #image1 {
+    z-index: 1;
     position: absolute;
     width: 400px;
     height: 420px;
@@ -916,7 +917,6 @@ table tr td input[type="date"]:focus{
     position: absolute;
     width: 70px;
     border-radius: 20px;
-    filter: brightness(1.7);
     z-index: 2;
 }
 
@@ -935,9 +935,17 @@ table tr td input[type="date"]:focus{
     left: 60%;
 }
 #image1 h1{
+    z-index: 2;
+    position: absolute;
+    width: 300px;
+    height: 130px;
+    left: 8%;
+    top: 30%;
+    font-weight: 550;
+    font-size: 50px;
     text-decoration: none;
     color: white;
-    filter: brightness(1.7);
+    font-family: Arial, Helvetica, sans-serif;
 }
 #image2 {
     position: absolute;
@@ -948,7 +956,16 @@ table tr td input[type="date"]:focus{
     border-radius: 60px;
     background-image: url(https://i.pinimg.com/1200x/67/67/77/676777119775328bca8acafa38b177d0.jpg);
 }
-
+#image2 h1{
+    width: 50px;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+    top: 50%;
+    left: 10%;
+}
 #image3 {
     position: absolute;
     width: 165px;
@@ -959,6 +976,16 @@ table tr td input[type="date"]:focus{
     background-image: url(https://i.pinimg.com/736x/1b/47/ee/1b47ee426a8e1b8680d3aa7b3e6c651b.jpg);
 }
 
+#image3 h1{
+    width: 100px;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    top: 58%;
+    left: 10%;
+}
 #image4 {
     position: absolute;
     width: 223px;
@@ -968,7 +995,16 @@ table tr td input[type="date"]:focus{
     left: 23%;
     background-image: url(https://i.pinimg.com/1200x/ee/3f/42/ee3f42ae97d810aa1e73c78d2c95cba1.jpg);
 }
-
+#image4 h1{
+    width: 130px;
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: left;
+    top: 35%;
+    left: 10%;
+}
 #image5 {
     position: absolute;
     width: 223px;
@@ -977,4 +1013,108 @@ table tr td input[type="date"]:focus{
     top: 68%;
     left: 55%;
     background-image: url(https://i.pinimg.com/736x/e4/41/b1/e441b1f9a80a78502aa2fb33ecc3a028.jpg);
+}
+#image5 h1{
+    width: 130px;
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: left;
+    top: 35%;
+    left: 10%;
+}
+#page5{
+    position: relative;
+    background-color: #FFE2EB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif ;
+}
+#model-img{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/736x/d5/b8/45/d5b845b1eb681918c5dd04c1147b1d93.jpg);
+    background-size: cover;
+}
+#story{
+    position: absolute;
+    width: 215px;
+    height: 383;
+    border-radius: 20px;
+    top: 30%;
+    left: 20%;
+    z-index: 1;
+}
+#profile{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    border-radius: 50%;
+    top: 74%;
+    left: 13%;
+    border: 2px solid white;
+}
+#model-img h5{
+    position: absolute;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    top: 84%;
+    left: 27%;
+}
+#model-img p{
+    position: absolute;
+    /* font-weight: 700; */
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    top: 87%;
+    left: 27%;
+}
+#discovering{
+    position: relative;
+    text-align: center;
+     width: 50%;
+    height: 100%;
+}
+#discovering h1{
+    position: absolute;
+    width: 420px;
+    top: 30%;
+    left: 28%;
+    font-size: 60px;
+    color: #C32F00;
+}
+#discovering p{
+    position: absolute;
+    width: 380px;
+    top: 51%;
+    left: 30%;
+    font-size: 25px;
+    color: #C32F00;
+}
+#discovering button{
+    top: 65%;
+}
+footer{
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px auto;
+    font-family: sans-serif ;;
+}
+footer a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #1a76a1;
+}
+footer a:hover{
+    text-decoration: underline;
 }
