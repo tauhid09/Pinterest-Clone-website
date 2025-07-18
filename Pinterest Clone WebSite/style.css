@@ -578,8 +578,6 @@ table tr td input[type="date"]:focus{
 #down-arrow a img {
     width: 25px;
     height: 25px;
-}
-.page2-image{
     animation: updown 1.5s alternate-reverse infinite;
 }
 
@@ -650,7 +648,7 @@ table tr td input[type="date"]:focus{
     background-color: #C28B00;
 }
 
-#all-image img {
+.page2-image {
     position: absolute;
     width: 250px;
     border-radius: 20px;
